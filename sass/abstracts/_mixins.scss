@@ -1,0 +1,9 @@
+@mixin respond($size) {
+    @if $size == xs {
+        @media (max-width: 415px) { @content };
+    }
+
+    @if $size == lg {
+        @media (min-width: 980px) { @content };
+    }
+}

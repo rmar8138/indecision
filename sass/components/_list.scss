@@ -1,0 +1,22 @@
+.list {
+    font-size: 1.8rem;
+    list-style: none;
+    letter-spacing: 0.8px;
+    width: 70%;
+    margin: 0 auto;
+
+    &-item {
+        padding: 2rem 0;
+        border-bottom: 1px solid $color-grey-dark;
+
+        & a {
+            text-decoration: none;
+            color: $color-black;
+            transition: color 0.2s;
+
+            &:hover {
+                color: $color-primary;
+            }
+        }
+    }
+}

@@ -1,0 +1,50 @@
+body {
+    background-color: $color-grey-light;
+}
+
+.main-content {
+    position: relative;
+    width: 80%;
+    margin: 30% auto 30% auto;
+    text-align: center;
+    transition: all 0.5s;
+
+    @include respond(lg) {
+        width: 65rem;
+        margin: 15% auto;
+    }
+
+    &__text {
+        font-size: 1.6rem;
+        margin-bottom: 4rem;
+        letter-spacing: 0.8px;
+    }
+
+    &--blur {
+        filter: blur(5px);
+    }
+}
+
+.decision {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+    opacity: 0;
+
+    &__text {
+        font-size: 2.4rem;
+        margin-bottom: 2rem;
+
+        @include respond(xs) {
+            font-size: 2rem;
+        }
+
+        &--answer {
+            font-size: 3rem;
+            color: $color-primary;
+        }
+    }
+}

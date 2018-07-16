@@ -1,0 +1,33 @@
+body {
+    font-family: "Lato", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    line-height: 1.7;
+    color: $color-black;
+    text-rendering: optimizeLegibility;
+}
+
+.heading-primary {
+    font-family: "Raleway";
+    font-size: 6rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    margin-bottom: 4rem;
+
+    @include respond(xs) {
+        font-size: 4rem;
+    }
+
+    @include respond(lg) {
+        font-size: 8rem;
+    }
+
+    &:after {
+        display: block;
+        content: "";
+        background-color: $color-black;
+        height: 4rem;
+        width: 1px;
+        margin: 0 auto;
+        margin-top: 1rem;
+    }
+}

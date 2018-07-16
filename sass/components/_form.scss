@@ -1,0 +1,23 @@
+.form {
+    margin-bottom: 4rem;
+
+    &__input {
+        font-size: 1.6rem;
+        text-align: center;
+        width: 70%;
+        padding: 1rem 2rem;
+        margin-bottom: 4rem;
+        border: 1px solid transparent;
+        border-radius: 3px;
+        transition: all 0.2s;
+
+        @include respond(sm) {
+            width: 100%;
+        }
+        
+        &:focus {
+            outline: none;
+            border: 1px solid $color-black;
+        }   
+    }
+}

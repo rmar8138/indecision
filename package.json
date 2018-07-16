@@ -1,0 +1,17 @@
+{
+  "name": "indecision",
+  "version": "1.0.0",
+  "description": "An app for indecisive people",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass sass/main.scss css/style.css -w"
+  },
+  "author": "Ragan Martinez",
+  "license": "ISC",
+  "devDependencies": {
+    "node-sass": "^4.9.2"
+  },
+  "dependencies": {
+    "jquery": "^3.3.1"
+  }
+}
